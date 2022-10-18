@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"02930bb0aa05afd35683fa6a2b9984a2","name":"open account and approve account","statistic":{"failed":0,"broken":3,"skipped":0,"passed":8,"unknown":0,"total":11}},{"uid":"aa6ebd65b4349c3e0a18788df5f8985e","name":"launchbrowser","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

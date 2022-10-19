@@ -18,9 +18,11 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
-        "example":"npx wdio run ./wdio.conf.js --spec example.e2e.js",
+        
         "Test1":"npx wdio run ./wdio.conf.js --spec OpenAccountcopy.js",
-        "Test2":"npx wdio run ./wdio.conf.js --spec ApplyDebitCardCopy.js"
+        "Test2":"npx wdio run ./wdio.conf.js --spec ApplyDebitCardCopy.js",
+        "Test3":"npx wdio run ./wdio.conf.js --spec CreditCustomerCopy.js",
+        "Test4":"npx wdio run ./wdio.conf.js --spec DeleteCustomerCopy.js"
     },
     "dependencies": {
         "wdio-video-reporter": "^3.2.3",

@@ -54,7 +54,9 @@ describe("open account and approve account",async()=>{
   
   
   var applnAlert= await browser.getAlertText()
+  await browser.pause(5000)
   await console.log(applnAlert)
+  await expect(applnAlert).toContain("Application submitted successfully")
   await browser.acceptAlert()
    
   
@@ -106,9 +108,9 @@ describe("open account and approve account",async()=>{
     await adminhome.AdminHomeButton.click()
   
     })
+
     testdata.forEach(({Reason}) => {
     it("delete customer",async()=>{
-
      await adminhome.DeleteCustomerButton.click()
      await deletecust.AccountNumberTextFieldDeleteCust.setValue(accno.trim())
 
@@ -125,7 +127,9 @@ describe("open account and approve account",async()=>{
     await deletecust.DeleteButton.click();
 
     var deletecustAlert= await browser.getAlertText()
+    await browser.pause(5000)
     await console.log(deletecustAlert)
+    await expect(deletecustAlert).toContain("Customer Deleted Successfully")
     await browser.acceptAlert()
 
 

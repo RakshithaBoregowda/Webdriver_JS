@@ -54,6 +54,7 @@ describe("open account and approve account",async()=>{
     
     var applnAlert= await browser.getAlertText()
     await console.log(applnAlert)
+    await expect(applnAlert).toContain("Application submitted successfully")
     await browser.acceptAlert()
      
     
@@ -72,8 +73,11 @@ describe("open account and approve account",async()=>{
         stafflogin.forEach(({StaffId,Password}) => {
 
         it("staff login",async()=>{
+    
 
             await homePage.StaffLoginLink.click();
+            await  expect(browser).toHaveTitle("Staff Page")
+
             await staff.StaffIDTextField.setValue(StaffId)
             await staff.PasswordTextField.setValue(Password)
             await staff.StaffLoginSubmitButton.click();
@@ -84,8 +88,8 @@ describe("open account and approve account",async()=>{
    
     
     it("approve account",async()=>{
-
       await adminhome.ApprovependingAccountButton.click();
+      await  expect(browser).toHaveTitle("Pending Customers")
       await approveaccount.ApplicationNumberTextField.setValue(appno.trim())
       await approveaccount.SearchApplicationButton.click()
       await approveaccount.ApproveButton.click();

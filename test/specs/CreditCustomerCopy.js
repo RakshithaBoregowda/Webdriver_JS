@@ -52,6 +52,7 @@ describe("open account and approve account",async()=>{
     
     
     var applnAlert= await browser.getAlertText()
+    await expect(applnAlert).toContain("Application submitted successfully")
     await console.log(applnAlert)
     await browser.acceptAlert()
      
@@ -121,9 +122,10 @@ describe("open account and approve account",async()=>{
 
         var creditAlert= await browser.getAlertText()
         await console.log(creditAlert)
+        await expect(creditAlert).toContain("Amount credited Successfully to customer account")
         await browser.acceptAlert()
-        //Amount credited Successfully to customer account
-
+    
+    
     })
   })
 

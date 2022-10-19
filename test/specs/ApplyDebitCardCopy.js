@@ -75,6 +75,7 @@ describe("open account and approve account",async()=>{
         it("staff login",async()=>{
 
             await homePage.StaffLoginLink.click();
+            await  expect(browser).toHaveTitle("Staff Page")
             await staff.StaffIDTextField.setValue(StaffId)
             await staff.PasswordTextField.setValue(Password)
             await staff.StaffLoginSubmitButton.click();
@@ -126,6 +127,7 @@ describe("open account and approve account",async()=>{
   
    var debitcardnumAlert =await browser.getAlertText()
    await console.log(debitcardnumAlert)
+   await expect(debitcardnumAlert).toContain("Debit Card issued successfully")
    await browser.acceptAlert()
   
    var debitCardNum='';
@@ -146,7 +148,6 @@ describe("open account and approve account",async()=>{
      debno=debno+debitCardNum.charAt(index)
    }
    console.log("debit card number is: "+debno.trim())
-  
    await homePage.HomeLogo.click();
    
   })
@@ -155,7 +156,7 @@ describe("open account and approve account",async()=>{
   
   stafflogin.forEach(({StaffId,Password}) => {
 
-    it("staff login",async()=>{
+   it("staff login",async()=>{
 
         await homePage.StaffLoginLink.click();
         await staff.StaffIDTextField.setValue(StaffId)
@@ -178,12 +179,12 @@ describe("open account and approve account",async()=>{
        var iterator=await browser.$$("//th[.='#']/parent::tr/following::tr/td[11]")[index].getText()
        if (iterator==debno.trim()) 
        {
-           console.log("test case pass")
+           await console.log("test case pass")
            break;
        }
      }
   
     })
-  
+
 })
   

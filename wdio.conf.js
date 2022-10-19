@@ -23,11 +23,11 @@ exports.config = {
     //
     specs: [
         // './test/specs/**/*.js'
- 
-// './test/specs/OpenAccountcopy.js'
-// './test/specs/ApplyDebitCardCopy.js'
-// './test/specs/CreditCustomerCopy.js'
-'./test/specs/DeleteCustomerCopy.js'
+        './test/specs/example.e2e.js',
+        './test/specs/OpenAccountcopy.js',
+        './test/specs/ApplyDebitCardCopy.js',
+        // './test/specs/CreditCustomerCopy.js',
+        // './test/specs/DeleteCustomerCopy.js'
     
     ],
 
@@ -74,6 +74,7 @@ exports.config = {
         acceptInsecureCerts: true,
         
         'goog:chromeOptions': {
+         excludeSwitches:['enable-automation'],
             prefs: {
               // 0 - Default, 1 - Allow, 2 - Block
               'profile.managed_default_content_settings.notifications': 1

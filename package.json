@@ -17,7 +17,10 @@
         "wdio-chromedriver-service": "^8.0.0"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "example":"npx wdio run ./wdio.conf.js --spec example.e2e.js",
+        "Test1":"npx wdio run ./wdio.conf.js --spec OpenAccountcopy.js",
+        "Test2":"npx wdio run ./wdio.conf.js --spec ApplyDebitCardCopy.js"
     },
     "dependencies": {
         "wdio-video-reporter": "^3.2.3",

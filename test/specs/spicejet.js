@@ -11,8 +11,12 @@ it("login to applucation",async()=>{
     await browser.pause(2000)
     await browser.$("//div[text()='Armed Forces']").click()
     await browser.pause(3000)
-    await browser.$("//div[text()='Return Date']").click()
-    await browser.$("//div[@data-testid='undefined-month-December-2022']//following::div[@data-testid='undefined-calendar-day-5']").click();
+
+    await browser.$("//div[@class='css-1dbjc4n']/div[.='Senior Citizen']").click()
+    await browser.$("//div[@data-testid='departure-date-dropdown-label-test-id']").click()
+    await browser.$("//div[@data-testid='undefined-month-October-2022']/descendant::div[@class='css-1dbjc4n r-6koalj r-18u37iz r-d0pm55']/div[.='22']").click()
+  
+
     await browser.$("//div[text()='Search Flight']").click()
     
 })

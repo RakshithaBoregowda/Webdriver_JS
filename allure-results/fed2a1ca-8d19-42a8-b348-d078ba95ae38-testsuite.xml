@@ -1,0 +1,124 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666267411292' stop='1666267441974'>
+    <name>open account and approve account</name>
+    <title>open account and approve account</title>
+    <test-cases>
+        <test-case start='1666267411294' status='passed' stop='1666267415893'>
+            <name>openAcc</name>
+            <title>openAcc</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666267415895' status='passed' stop='1666267417750'>
+            <name>staff login</name>
+            <title>staff login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666267417752' status='broken' stop='1666267418931'>
+            <name>approve account</name>
+            <title>approve account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4ddc2900-99dc-4b2f-b2a4-2b0c3567b07d-attachment.png' type='image/png' size='60873'/>
+            </attachments>
+            <failure>
+                <message>no such alert
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>no such alert: no such alert
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\request\index.js:166:60)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\ApplyDebitCardCopy.js:95:22)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666267418932' status='broken' stop='1666267429063'>
+            <name>apply debit card</name>
+            <title>apply debit card</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5ff2eb1b-15ed-4031-90a0-128027088d10-attachment.png' type='image/png' size='60873'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector "//li[text()='Apply Debit Card']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//li[text()='Apply Debit Card']" because element wasn't found
+                    at implicitWait (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\ApplyDebitCardCopy.js:118:4)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666267429063' status='broken' stop='1666267439309'>
+            <name>staff login</name>
+            <title>staff login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='d1c324d9-64c4-45ae-9502-8b965d9fb930-attachment.png' type='image/png' size='48840'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "//input[@name='staff_id']" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "//input[@name='staff_id']" because element wasn't found
+                    at implicitWait (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\ApplyDebitCardCopy.js:162:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666267439309' status='passed' stop='1666267441972'>
+            <name>validation</name>
+            <title>validation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

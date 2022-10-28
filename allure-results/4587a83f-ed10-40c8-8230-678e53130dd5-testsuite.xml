@@ -1,0 +1,88 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666331291506' stop='1666331314867'>
+    <name>open account and approve account</name>
+    <title>open account and approve account</title>
+    <test-cases>
+        <test-case start='1666331291507' status='failed' stop='1666331306371'>
+            <name>openAcc</name>
+            <title>openAcc</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='fb115357-395f-4c18-b46c-13c22cadf0ba-attachment.png' type='image/png' size='520441'/>
+            </attachments>
+            <failure>
+                <message>expected result is not matching: expected 'Application submitted successfully\n\…' to equal 'Application submitted successfully'      
+                      actual expected
+                      
+                      'Application submitted successfully\n\nApplication number : 451591144\n\nPlease visit bank with application number for account approval\n\nHint: From staff login, approve application'
+                      </message>
+                <stack-trace>AssertionError: expected result is not matching: expected 'Application submitted successfully\n\…' to equal 'Application submitted successfully'
+                    at Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\CreditCustomerCopy.js:59:29)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666331306372' status='passed' stop='1666331307583'>
+            <name>staff login</name>
+            <title>staff login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666331307583' status='passed' stop='1666331308935'>
+            <name>approve account</name>
+            <title>approve account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666331308935' status='broken' stop='1666331314861'>
+            <name>issue credit</name>
+            <title>issue credit</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='59d60635-0f90-4166-bf14-20aaddbfea7a-attachment.png' type='image/png' size='48237'/>
+            </attachments>
+            <failure>
+                <message>no such alert
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>no such alert: no such alert
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\request\index.js:166:60)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\CreditCustomerCopy.js:127:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

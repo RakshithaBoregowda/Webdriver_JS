@@ -1,3 +1,5 @@
+
+
 const homePage = require("../pageobjects/homePage");
 const openacc=require("../pageobjects/openAccountPage")
 const staff=require("../pageobjects/staffloginpage")
@@ -6,7 +8,7 @@ const adminhome=require("../pageobjects/AdminHomePage")
 const creditaccpg=require("../pageobjects/CreditCustomerPage")
 
 
-
+var expectchai=require("chai")
 var  fs=require('fs');
 let stafflogin=JSON.parse(fs.readFileSync("./TestData/staffLogin.json"))
 let testdata=JSON.parse(fs.readFileSync("./TestData/AccInfo.json"))
@@ -26,7 +28,8 @@ describe("open account and approve account",async()=>{
     
     console.log("open account page")
     homePage.OpenAccountButton.click()
-    expect(browser).toHaveTitle("Registration Form")
+
+    await expect(browser).toHaveTitle("Registration Form")
 
      await openacc.NameTextField.setValue(Name)
      await openacc.MobileNumberTextField.setValue(Mobile)
@@ -52,7 +55,8 @@ describe("open account and approve account",async()=>{
     
     
     var applnAlert= await browser.getAlertText()
-    await expect(applnAlert).toContain("Application submitted successfully")
+    //await expect(applnAlert).toContain("Application submitted successfully")
+    await expectchai.assert.include(applnAlert,'Application submitted successfully','expected result is not matching')
     await console.log(applnAlert)
     await browser.acceptAlert()
      

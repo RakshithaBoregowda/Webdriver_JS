@@ -23,11 +23,11 @@ describe("open account and approve account",async()=>{
   it("openAcc",async()=>{
   
   await browser.url("http://rmgtestingserver/domain/Online_Banking_System/")
-  console.log(await browser.getTitle())
+  await console.log(await browser.getTitle())
   await browser.maximizeWindow()
   
   console.log("open account page")
-  homePage.OpenAccountButton.click()
+  await homePage.OpenAccountButton.click()
   expect(browser).toHaveTitle("Registration Form")
 
    await openacc.NameTextField.setValue(Name)

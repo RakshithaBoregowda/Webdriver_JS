@@ -24,7 +24,8 @@ exports.config = {
     specs: [
         // './test/specs/**/*.js'
         // './test/specs/example.e2e.js',
-        './test/specs/OpenAccountcopy.js',
+        // './test/specs/spicejet.js',
+        // './test/specs/OpenAccountcopy.js',
         './test/specs/ApplyDebitCardCopy.js',
         './test/specs/CreditCustomerCopy.js',
         './test/specs/DeleteCustomerCopy.js'

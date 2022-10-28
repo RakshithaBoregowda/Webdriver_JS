@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666284810865' stop='1666284866473'>
+    <name>open account and approve account</name>
+    <title>open account and approve account</title>
+    <test-cases>
+        <test-case start='1666284810866' status='broken' stop='1666284834738'>
+            <name>openAcc</name>
+            <title>openAcc</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ce2de7d1-7e65-4af4-a02c-6ec4d55ffc38-attachment.png' type='image/png' size='15137'/>
+            </attachments>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\request\index.js:166:60)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\DeleteCustomerCopy.js:25:3)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666284834738' status='broken' stop='1666284845971'>
+            <name>staff login</name>
+            <title>staff login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3189c8bf-18ad-4800-bfd5-c7d7a46d4424-attachment.png' type='image/png' size='15137'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector "//a[text()='Staff Login']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//a[text()='Staff Login']" because element wasn't found
+                    at implicitWait (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\DeleteCustomerCopy.js:79:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666284845975' status='broken' stop='1666284856275'>
+            <name>approve account</name>
+            <title>approve account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='8129a0b2-29df-4ffd-b6b3-b48eb176817f-attachment.png' type='image/png' size='15137'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector "[name='apprvac']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "[name='apprvac']" because element wasn't found
+                    at implicitWait (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\DeleteCustomerCopy.js:91:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666284856275' status='broken' stop='1666284866471'>
+            <name>delete customer</name>
+            <title>delete customer</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5951795b-1e8b-4b1f-82dd-55fb9a88f9c5-attachment.png' type='image/png' size='15137'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector "//input[@name='del_cust']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//input[@name='del_cust']" because element wasn't found
+                    at implicitWait (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Rakshitha\Desktop\wD_RMB\test\specs\DeleteCustomerCopy.js:114:6)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

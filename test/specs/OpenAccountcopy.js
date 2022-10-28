@@ -6,7 +6,7 @@ const adminhome=require("../pageobjects/AdminHomePage")
 //const valid=require("../pageobjects/Validation")
 
 
-
+var expectchai=require("chai")
 var  fs=require('fs');
 let stafflogin=JSON.parse(fs.readFileSync("./TestData/staffLogin.json"))
 let testdata=JSON.parse(fs.readFileSync("./TestData/AccInfo.json"))
@@ -54,9 +54,11 @@ describe("open account and approve account",async()=>{
     
     var applnAlert= await browser.getAlertText()
     await console.log(applnAlert)
-    await expect(applnAlert).toContain("Application submitted successfully")
+    await expectchai.assert.include(applnAlert,'Application submitted successfully','expected result is not matching')
+    //await expect(applnAlert).toContain("Application submitted successfully")
     await browser.acceptAlert()
      
+    
     
      for (let index = 0; index < applnAlert.length; index++) 
     {

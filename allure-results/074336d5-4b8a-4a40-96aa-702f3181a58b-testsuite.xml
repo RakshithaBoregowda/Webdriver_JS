@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666204319059' stop='1666204361464'>
+    <name>flight booking </name>
+    <title>flight booking </title>
+    <test-cases>
+        <test-case start='1666204319060' status='broken' stop='1666204361462'>
+            <name>login to applucation</name>
+            <title>login to applucation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='89a8c728-ce46-4be7-a690-0aae678ae904-attachment.png' type='image/png' size='409983'/>
+            </attachments>
+            <failure>
+                <message>element click intercepted: Element &lt;div class="css-76zvg2 r-cqee49 r-n6v787 r-1ozqkpa" dir="auto" style="font-family: inherit;">...&lt;/div> is not clickable at point (317, 442). Other element would receive the click: &lt;div class="css-1dbjc4n r-1awozwy r-14lw9ot r-1loqt21 r-eu3ka r-1otgn73 r-1aockid" data-focusable="true" tabindex="0" data-testid="undefined-calendar-day-undefined">&lt;/div>
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;div class="css-76zvg2 r-cqee49 r-n6v787 r-1ozqkpa" dir="auto" style="font-family: inherit;">...&lt;/div> is not clickable at point (317, 442). Other element would receive the click: &lt;div class="css-1dbjc4n r-1awozwy r-14lw9ot r-1loqt21 r-eu3ka r-1otgn73 r-1aockid" data-focusable="true" tabindex="0" data-testid="undefined-calendar-day-undefined">&lt;/div>
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriver\build\request\index.js:166:60)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\Rakshitha\Desktop\wD_RMB\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
